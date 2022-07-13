@@ -1,0 +1,33 @@
+* {
+  color: green;
+}
+
+li {
+  color: blue;
+}
+
+/* li에 있는 special id 태그만 */
+li#special {
+  color: pink;
+}
+
+.red {
+  background-color: yellow;
+  width: 100px;
+  height: 100px;
+  padding: 20px 20px 20px 20px;
+  margin: 20px;
+  border: 2px dashed red;
+}
+
+button:hover {
+  color: red;
+  background-color: beige;
+}
+/* 
+태그 [속성의 이름] 
+$= 끝나는 것, ^= 시작하는 것 
+*/
+a[href$=".com"] {
+  color: purple;
+}

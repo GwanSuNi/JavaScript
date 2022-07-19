@@ -172,11 +172,11 @@ const paintTodo = (todo) => {
   const delBtnElem = document.createElement("button");
   delBtnElem.classList.add("delBtn");
   delBtnElem.addEventListener("click", () => deleteTodo(todo.id));
-  delBtnElem.innerHTML = "X";
+  delBtnElem.innerHTML = "❌";
 
   if (todo.isCompleted) {
     todoItemElem.classList.add("checked");
-    checkboxElem.innerText = "✔";
+    checkboxElem.innerText = "✓";
   }
 
   todoItemElem.appendChild(checkboxElem);
